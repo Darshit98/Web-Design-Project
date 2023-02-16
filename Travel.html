@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="travelstyle.css">
+    <title>Travel</title>
+</head>
+<body>
+    <!--Nav-bar Component-->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f5a207;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h3>World Travel</h3></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Travel.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Flight.html">BOOK HERE</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Language</a></li>
+                  <li><a class="dropdown-item" href="#">Currency</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Exciting OFFERS!!</a></li>
+                </ul>
+              </li>
+              <!--
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+              -->
+            </ul>
+            <!--Button Group Component-->
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-primary">Log In</button>
+                <button type="button" class="btn btn-primary">Sign Up</button>
+              </div>
+              
+              
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn" type="submit">Search</button>
+            </form>
+            <!--Badge Component for notifications-->
+            <div class="badge">
+              <button type="button" class="btn btn-primary position-relative">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                </svg>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  4
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <!--Alert Component-->
+    <section class="alert-bar">
+        <div class="alert alert-success" style="text-align: center; margin-bottom: 0%; width: 100%;">
+          <strong>Congratulations!</strong> Hears our new Valentine week offer <a href="Flight.html" class="alert-link">check here</a>.
+        </div>
+    </section>
+      <!--Carousel Image Slider Component-->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Images/banner.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="carousel-text">TRAVEL TRAVEL</h5>
+              <p class="carousel-text">The journey of a thousand miles begins with a single step</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Images/Img2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>EXPLORE BEFORE IT ENDS</h5>
+              <p>Travel brings power and love back into your life.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Images/travel.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>TRAVEL TOGTHER</h5>
+              <p>Book a ticket and just leave.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--Card layout Component-->
+      <div id="section01" class="container" style="padding-top: 120px">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="Images/London.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">London</h4>
+                <p class="card-text">London is a world by itself. We daily discover in it more new countries, and surprising singularities, than in all the universe besides.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="Images/NYC.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">New York</h4>
+                <p class="card-text">This is the city of dreamers and time and again it’s the place where the greatest dream of all, the American dream, has been tested and has triumphed.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="Images/Sydney.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Sydney</h4>
+                <p class="card-text">Sydney is open to the world and ready to welcome all travellers with open arms, and in turn, promises to offer experiences that have the power to transform and renew every traveller who visits to our capital</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="Images/Venice.jpg" alt="Card image cap">
+              <dwrapper bg-lightiv class="card-body">
+                <h4 class="card-title">Venice</h4>
+                <p class="card-text">My husband and I went to Venice, Italy, for our first-year anniversary and spent a day on the Island of Burano. There, we had lunch at the famed Trattoria al Gatto Nero da Ruggero – one of the most incredible meals of our lives.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>
